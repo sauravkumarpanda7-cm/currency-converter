@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Currency Converter</h2>
+
+        <form>
+
+            <!-- Amount -->
+            <div class="amount">
+                <label for="amount">Enter Amount</label>
+
+                <input id="amount" type="number" value="100" min="1" placeholder="Enter amount">
+            </div>
+
+
+            <div class="dropdown">
+
+                <!-- FROM -->
+                <div class="currency-box">
+
+                    <label for="from">From</label>
+
+                    <div class="select-container">
+
+                        <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+
+                        <select id="from" name="from">
+                        </select>
+                    </div>
+                </div>
+                <!-- SWAP -->
+                <div class="swap">
+                    ⇄
+                </div>
+                <!-- TO -->
+                <div class="currency-box">
+                    <label for="to">To</label>
+                    <div class="select-container">
+                        <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png" alt="India Flag">
+                        <select id="to" name="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Result -->
+            <div class="result">
+                <p id="result">100 USD = 0 INR</p>
+            </div>
+            <!-- Button -->
+            <button type="submit">
+                Convert Currency
+            </button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
